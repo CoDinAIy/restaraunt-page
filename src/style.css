@@ -1,0 +1,230 @@
+header {
+    display: flex;
+    justify-content:center;
+    padding: 3% 0% 5% 2%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20em;
+    justify-content: space-evenly;
+    width: 20em;
+}
+
+button {
+    padding: .5em 1em .5em 1em;
+    font-size: 16px;
+    border-radius: 10%;
+    border: none;
+    background-color: orange;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    padding: 0% 0% 5% 0%;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 20% 0% 20%;
+    color: white;
+    background-color: black;
+}
+
+.imageHome {
+    width:100%;
+    height: 30em;
+    object-fit: cover;
+    padding-bottom: 7%;
+}
+
+.aboutHome {
+    font-size: 36px;
+    padding: 2% 2% 0% 2%;
+    text-align: center;
+}
+
+.three {
+    padding-bottom: 5%;
+}
+
+.footer {
+    padding: 2%;
+    background-color: orange;
+    border: solid 1px orange;
+    border-radius: 20px;
+}
+
+.footerTitle {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: .5em;
+    text-decoration: underline;
+}
+
+.footerContainer { 
+    font-size: 32px;
+    color: black;
+    display: grid;
+    grid-template-areas:
+    'footerText footerImages'
+    'footerText footerImages';
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerText > div {
+    font-size: 18px;
+    padding: 2% 0% 2% 0%;
+    font-weight: 600;
+}
+
+.instagram, .twitter, .facebook {
+    padding: 1% 1% 0% 0%;
+    max-width: 1em;
+    max-height: 1em;    
+}
+
+.followTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.menuContainer {
+    max-height: 100%;
+    overflow: auto;
+    background-color: orange;
+    border: solid 1px orange;
+    border-radius: 10px;
+    margin-bottom: 5em;
+    padding: 4em;
+
+    display: grid;
+    row-gap: 2em;
+    column-gap: 4em;
+    grid-template-rows: repeat(4, minmax (200px, 1fr));
+    grid-template-columns: repeat(2, minmax (200px, 1fr));
+    grid-template-areas: 
+    'menuItemOneImg menuItemOneText'
+    'menuItemTwoImg menuItemTwoText'
+    'menuItemThreeImg menuItemThreeText'
+    'menuItemFourImg menuItemFourText'
+    ;
+}
+
+.menuTitle {
+    font-size: 1.5em;
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.menuDescription {
+    font-size: 1em;
+    color: black;
+}
+
+.menuImage {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menuItemOneImg, .menuItemThreeImg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.questionTitle {
+    font-size: 40px;
+    text-align: center;
+}
+
+.aboutDescription {
+    font-size: 36px;
+    text-align: center;
+    margin: 1.5em 0em 1.5em 0em;
+}
+
+.aboutTitle {
+    color: white;
+    text-align: center;
+    font-size: 56px;
+    padding: 0% 0% 2% 0%;
+}
+
+.line {
+    margin: 1em 0 4em 0;
+}
+
+.openingTimesContainer {
+    align-self: center;
+    width: 30em;
+    max-height: 100%;
+    overflow: auto;
+    background-color: orange;
+    border: solid 1px orange;
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+
+.openingTimesTitle {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    margin: 1em 0em 1em 0em;
+}
+
+.location {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    margin: 2em 0em 2em 0em;
+}
+
+.locationTimes {
+
+    font-size: 16px;
+}
+
+.flexOpeningTimes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followTitle {
+        margin-top: 0.5em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    button {
+        padding: 0.3em 0.8em 0.3em 0.8em;
+        margin: 0em 0.3em 0em 0.3em;
+    }
+}
